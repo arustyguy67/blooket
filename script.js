@@ -1,4 +1,4 @@
-let tokens = 100;
+let tokens = 1,000,000;
 let collection = [];
 
 function openPack() {
@@ -14,12 +14,13 @@ function openPack() {
   let reward = "";
 
   if (roll < 0.05) {
-    reward = "🌟 Legendary Dragon";
+    reward = "🌟 Legandary King";
   } else if (roll < 0.25) {
     reward = "💎 Rare Knight";
   } else {
     reward = "🔹 Common Goblin";
-  }
+  } else {
+    reward = "Chroma Dragon!";
 
   collection.push(reward);
   document.getElementById("result").textContent = `You got: ${reward}`;
