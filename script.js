@@ -17,10 +17,11 @@ function openPack() {
     reward = "🌟 Legandary King";
   } else if (roll < 0.25) {
     reward = "💎 Rare Knight";
+  } else if (roll < 0.02) {
+    reward = "CHROMA DRAGON!";
   } else {
     reward = "🔹 Common Goblin";
-  } else {
-    reward = "Chroma Dragon!";
+
 
   collection.push(reward);
   document.getElementById("result").textContent = `You got: ${reward}`;
